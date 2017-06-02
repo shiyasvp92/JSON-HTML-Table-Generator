@@ -1,16 +1,5 @@
 describe("Testing Table-Generator", function() {
-	function hasDuplicates(array) {
-        var values = Object.create(null);
-        for (var i = 0; i < array.length; ++i) {
-            var value = array[i];
-            if (value in values) {
-                return true;
-            }
-            values[value] = true;
-        }
-        return false;
-    }
-
+	
     it("Check if Headers List contain duplicates", function() {
         expect(hasDuplicates(view.headers)).toEqual(false);
     });
