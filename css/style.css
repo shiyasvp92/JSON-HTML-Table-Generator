@@ -1,0 +1,20 @@
+tr:nth-child(2n) {
+    background: #ccc;
+}
+tr:hover:not(#header-row){
+  background: #6495ed;
+}
+td{
+    text-align: center;
+}
+th{
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+th:after{
+    content: '⇅';
+    color: #5f9ea0;
+}
+th:hover{
+    background: #a4bf93;
+}
